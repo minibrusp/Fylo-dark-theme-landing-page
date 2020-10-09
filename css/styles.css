@@ -334,7 +334,15 @@ aside.access input {
    padding: 1rem 2rem;
    color: var(--Dark-Blue2);
    font-weight: 700;
+   border: 0px transparent;
+   transition: .5s border;
 }
+
+aside.access input:focus {
+   outline: none;
+   border: 2px solid var(--Cyan);
+}
+
 
 /* Footer ---- */
 footer {
