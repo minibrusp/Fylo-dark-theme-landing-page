@@ -801,16 +801,22 @@ footer {
 
    /* header-1200 */
    nav {
-      margin-bottom: 0;
-      padding-bottom: 0;
-      padding-top: 10px;
+      padding: 20px 0;
    }
+   header {
+      height: 100vh;
+   }
+
    header .banner {
-      margin: 1vh auto 1vh auto;
+      margin: auto auto auto auto;
    }
 
    header .banner img {
       max-width: 70vh;
+   }
+
+   .bg-lower-ctr {
+      margin: auto;
    }
 
    header h1 {
