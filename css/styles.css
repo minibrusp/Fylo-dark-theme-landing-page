@@ -179,10 +179,35 @@ nav li {
 }
 
 nav li a {
+   display: block;
    color: var(--Darker-White);
+   position: relative;
+   -webkit-backface-visibility: hidden;
 }
+
+nav li a::after {
+   content: '';
+   background-color: var(--Darker-White);
+   position: absolute;
+   left: 0;
+   bottom: -2px;
+   width: 100%;
+   height: 1px;
+   transform: scaleX(0.1);
+   transform-origin: left;
+   transition: transform .3s,
+               background-color .3s;
+}
+
 nav li a:hover {
    color: var(--Cyan);
+}
+
+nav li a:hover::after {
+   transform: scaleX(1);
+   transform-origin: left;
+   background-color: var(--Cyan);
+   
 }
 
 
