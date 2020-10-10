@@ -584,7 +584,7 @@ footer {
       background-position: bottom;
    }
    nav {
-      padding: 20px 0 10px 0;
+      padding: 30px 0 20px 0;
    }
 
    nav img {
@@ -593,7 +593,7 @@ footer {
    }
 
    header .banner {
-      margin: 0 auto 0 auto;
+      margin: 5vh auto 2vh auto;
    }
 
    header .banner img {
@@ -807,9 +807,6 @@ footer {
       height: 100vh;
    }
 
-   header .banner {
-      margin: auto auto auto auto;
-   }
 
    header .banner img {
       max-width: 70vh;
