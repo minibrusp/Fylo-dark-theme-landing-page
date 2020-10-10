@@ -367,7 +367,7 @@ aside.access p {
    line-height: 1.7;
 }
 
-aside.access input {
+aside.access input[type="email"] {
    display: block;
    font-size: 0.878rem;
    width: 21rem;
@@ -384,6 +384,29 @@ aside.access input {
 aside.access input:focus {
    outline: none;
    border: 2px solid var(--Cyan);
+}
+
+aside.access input[type="button"] {
+   font-size: 0.878rem;
+   width: 21rem;
+   height: 3.5rem;
+   padding: 1rem 2rem;
+   border: 0px transparent;
+   display: inline-block;
+   background: linear-gradient(to right, var(--Cyan)10%,var(--Blue)40%, var(--Cyan)40%, var(--Blue)10%);
+   background-size: 200% auto;
+   border-radius: 50px;
+   color: var(--White);
+   font-weight: 700;
+   transition: .5s background;
+}
+
+
+aside.access input[type="button"]:hover, 
+aside.access input[type="button"]:focus {
+   border: unset;
+   cursor: pointer;
+   background-position: right center
 }
 
 
@@ -728,11 +751,11 @@ footer {
 
    aside.access .action {
       display: grid;
-      grid-template-columns: 1fr .5fr;
-      width: 80%;
+      grid-template-columns: 1fr .4fr;
+      width: 90%;
       margin: 20px auto;
    }
-   aside.access input {
+   aside.access input[type="email"] {
       padding: .5rem 2rem;
       margin: 0;
       width: 95%;
@@ -740,11 +763,14 @@ footer {
       justify-self: center;
    }
 
-   aside.access .btn {
+
+   aside.access input[type="button"] {
       padding: 1rem 2rem;
       align-self: center;
       justify-self: center;
+      width: 180px;
    }
+
 
    /* footer-900 */
    footer {
