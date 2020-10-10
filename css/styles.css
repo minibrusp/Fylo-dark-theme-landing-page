@@ -409,6 +409,10 @@ aside.access input[type="button"]:focus {
    background-position: right center
 }
 
+aside.access input[type="button"]:active {
+   background-position: left center;
+}
+
 
 /* Footer ---- */
 footer {
